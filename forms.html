@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
-    <link rel="stylesheet" href="/css/style.css"
+            <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
     <input type="tel"/> <br>
@@ -18,23 +18,30 @@
     <input type="file" > <br>
     <textarea name="kjfsd" rows="2" cols="2"> </textarea>
 
-
-
-    <hr>
+    <hr>    
 
     <form action="mailto:ingo@gmail.com" method="post" enctype="text/plain">
-        <label>Your name</label> 
-        <input type="text" name="name" value="">
+        <label>Your name
+            <input type="text" name="name" value="" placeholder="Enter name">
+        </label> 
+        
         <br>
-        <label>Your Email</label>
-        <input type="email" name="email" value="">
+        <label for="email">Your Email</label>
+        <input placeholder="Enter email" id="email" type="email" name="email" value="">
         <br>
-        <textarea name="message" cols="30" rows="10"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Enter text"></textarea>
         <br>
-        <input type="submit" name="" target="_blank">
+        <button disabled="submit">Hello</button>
     </form>
     
 
     <hr>
+
+    <form action="https://www.google.com/search">
+
+        <input type="text" name="q" id="search" placeholder="search in yt">
+
+        <button type="submit">Search</button>
+    </form>
 </body>
 </html>
